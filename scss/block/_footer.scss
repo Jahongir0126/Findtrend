@@ -1,0 +1,31 @@
+.footer{
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
+    &__list{
+        list-style: none;
+        display: flex;
+        column-gap: 40px;
+        & a{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 100%;
+            text-align: center;
+            transition: all 0.3;
+            
+            color: #000000;
+        }
+        & li:hover{
+            transform: scale(1.07);
+        }
+
+        & a:hover{
+            color: #87D322;
+        }
+
+    }
+
+
+}
