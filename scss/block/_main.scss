@@ -369,6 +369,9 @@ a {
         & a{
             width: 266px;
             height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             background: #F5F5F5;
             border-radius: 8px;
             &:hover{
@@ -377,7 +380,6 @@ a {
         }
         & img{
             display: block;
-            margin:45px auto;
         }
     }
 
@@ -417,7 +419,6 @@ a {
 
             background-color: white;
             border-radius: 8px;
-            display: flex;
         }
     }
     &__link{
@@ -703,6 +704,11 @@ a {
         transform: rotateZ(0deg);
     }
 }
+// /------------------------------------------------------------------------------------/ 
+// /------------------------------------------------------------------------------------/ 
+// /------------------------------------------------------------------------------------/ 
+
+
 
 
 
@@ -746,22 +752,59 @@ a {
 
             .twitter {
                 top: 17px;
-                left: 25px;
+                left: 45px;
+
+                width: 291px;
+                height: 70px;
+                font-size: 20px;
+                &::after{
+
+                    left: 205px;
+                    width: 80px;
+                    height: 70px;
+                }
             }
 
             .facebook {
                 top: 174px;
-                left: 25px;
+                left: 45px;
+                width: 291px;
+                height: 70px;
+                font-size: 20px;
+                &::after{
+
+                    left: 205px;
+                    width: 80px;
+                    height: 70px;
+                }
             }
 
             .picsart {
                 top: 100px;
-                left: 25px;
+                left: 45px;
+                width: 291px;
+                height: 70px;
+                font-size: 20px;
+                &::after{
+
+                    left: 205px;
+                    width: 80px;
+                    height: 70px;
+                }
             }
 
             .elon-musk {
                 top: 260px;
-                left: 25px;
+                left: 45px;
+                width: 291px;
+                height: 70px;
+                font-size: 20px;
+                &::after{
+
+                    left: 205px;
+                    width: 80px;
+                    height: 70px;
+                }
             }
 
 
@@ -808,5 +851,104 @@ a {
     }
     }
 
+    .section3{
+        &__h2{
+            margin-top: 80px;
+            width: 85%;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 43px;
+
+            color: #000000;
+        }
+        &__h3{
+            margin-top: 160px;
+            width: 85%;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 43px;
+            text-align: center;
+            
+            color: #000000;
+        }
+        &__brands{
+            
+            margin-bottom: 80px;
+        
+        & img{
+            width: 42%;
+        }
+        & a{
+            width: 162px;
+            height: 74px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    }
+    .section4{
+        &__h2{
+            margin-top: 80px;
+            width: 90%;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 43px;
+        }
+        & >div{
+            column-gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+        }
+        & >div img{
+            width: 30px;
+        }
+        &>div a{
+            width: 64px;
+            height: 64px;
+        }
+        &>img{
+            width: 339px;
+            height: 344;
+        }
+        &>a{
+            font-size: 14px;
+            width: 152px;
+            height: 44px;
+            margin-bottom: 80px;
+        }
+    }
+    .section5{
+        &__h3{
+            margin-top: 80px;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 43px;
+        }
+        .yearly::after{
+            content: url(../../img/month_after_mobile.png);
+            top: 100%;
+            left: -30px;
+        }
+        .plan{
+            margin-top: 80px;
+            margin-bottom: 80px;
+            padding: 0;
+            flex-direction: column;
+            row-gap: 24px;
+            
+        }
+    }
+    .section6{
+        &__h2{
+            margin-top: 80px;
+            font-size: 36px;
+            
+        }
+        &__link{
+            margin-bottom:80px ;
+        }
+    }
+    
 }
 

@@ -854,6 +854,9 @@ a {
 .section3__brands a {
   width: 266px;
   height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #F5F5F5;
   border-radius: 8px;
 }
@@ -862,7 +865,6 @@ a {
 }
 .section3__brands img {
   display: block;
-  margin: 45px auto;
 }
 
 .section4 {
@@ -898,7 +900,6 @@ a {
   transition: all 0.3s;
   background-color: white;
   border-radius: 8px;
-  display: flex;
 }
 .section4__link {
   width: 198px;
@@ -1210,19 +1211,51 @@ a {
   }
   .section1__search .twitter {
     top: 17px;
-    left: 25px;
+    left: 45px;
+    width: 291px;
+    height: 70px;
+    font-size: 20px;
+  }
+  .section1__search .twitter::after {
+    left: 205px;
+    width: 80px;
+    height: 70px;
   }
   .section1__search .facebook {
     top: 174px;
-    left: 25px;
+    left: 45px;
+    width: 291px;
+    height: 70px;
+    font-size: 20px;
+  }
+  .section1__search .facebook::after {
+    left: 205px;
+    width: 80px;
+    height: 70px;
   }
   .section1__search .picsart {
     top: 100px;
-    left: 25px;
+    left: 45px;
+    width: 291px;
+    height: 70px;
+    font-size: 20px;
+  }
+  .section1__search .picsart::after {
+    left: 205px;
+    width: 80px;
+    height: 70px;
   }
   .section1__search .elon-musk {
     top: 260px;
-    left: 25px;
+    left: 45px;
+    width: 291px;
+    height: 70px;
+    font-size: 20px;
+  }
+  .section1__search .elon-musk::after {
+    left: 205px;
+    width: 80px;
+    height: 70px;
   }
   .section2__h2 {
     margin-top: 80px;
@@ -1262,6 +1295,91 @@ a {
     width: 80px;
     height: 70px;
   }
+  .section3__h2 {
+    margin-top: 80px;
+    width: 85%;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000000;
+  }
+  .section3__h3 {
+    margin-top: 160px;
+    width: 85%;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color: #000000;
+  }
+  .section3__brands {
+    margin-bottom: 80px;
+  }
+  .section3__brands img {
+    width: 42%;
+  }
+  .section3__brands a {
+    width: 162px;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .section4__h2 {
+    margin-top: 80px;
+    width: 90%;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 43px;
+  }
+  .section4 > div {
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+  }
+  .section4 > div img {
+    width: 30px;
+  }
+  .section4 > div a {
+    width: 64px;
+    height: 64px;
+  }
+  .section4 > img {
+    width: 339px;
+    height: 344;
+  }
+  .section4 > a {
+    font-size: 14px;
+    width: 152px;
+    height: 44px;
+    margin-bottom: 80px;
+  }
+  .section5__h3 {
+    margin-top: 80px;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 43px;
+  }
+  .section5 .yearly::after {
+    content: url(../../img/month_after_mobile.png);
+    top: 100%;
+    left: -30px;
+  }
+  .section5 .plan {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 0;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+  .section6__h2 {
+    margin-top: 80px;
+    font-size: 36px;
+  }
+  .section6__link {
+    margin-bottom: 80px;
+  }
 }
 .footer {
   max-width: 1440px;
@@ -1289,4 +1407,19 @@ a {
 }
 .footer__list a:hover {
   color: #87D322;
+}
+
+@media screen and (max-width: 426px) {
+  .footer {
+    padding: 80px 0px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer__list {
+    margin-top: 90px;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+  }
 }/*# sourceMappingURL=main.css.map */
