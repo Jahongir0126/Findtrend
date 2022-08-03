@@ -1261,6 +1261,7 @@ a {
     margin-top: 80px;
     margin-bottom: 100px;
     font-size: 36px;
+    line-height: 112%;
   }
   .section2__p {
     font-size: 14px;
@@ -1361,10 +1362,27 @@ a {
     font-size: 36px;
     line-height: 43px;
   }
+  .section5 .color {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .section5 .monthly::after {
+    left: 94px;
+    height: 44px;
+    top: -6px;
+  }
   .section5 .yearly::after {
     content: url(../../img/month_after_mobile.png);
     top: 100%;
     left: -30px;
+  }
+  .section5 .yearly > .cheking {
+    width: 32px;
+    height: 32px;
+    top: 0;
+  }
+  .section5 .yearly > input:checked + span {
+    left: -57px;
   }
   .section5 .plan {
     margin-top: 80px;
